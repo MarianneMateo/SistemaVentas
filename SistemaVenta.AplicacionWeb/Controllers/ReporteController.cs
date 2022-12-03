@@ -2,7 +2,7 @@
 
 namespace SistemaVenta.AplicacionWeb.Controllers
 {
-    public class UsuariosController : Controller
+    public class ReporteController : Controller
     {
         public IActionResult Index()
         {

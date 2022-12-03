@@ -1,12 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Usuarios";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="py-3 mb-4">
-  <a href="agregarUsuario.html" class="btn btn-primary" type="button">
-    <span class="tf-icons bx bx-user-plus"></span>&nbsp; Agregar Usuario
-  </a>
+    <a href="@Url.Action("AgregarUsuario", "Usuario")" class="btn btn-primary" type="button">
+        <span class="tf-icons bx bx-user-plus"></span>&nbsp; Agregar Usuario
+    </a>
 </div>
 
 <!-- Basic Bootstrap Table -->

@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "AgregarCategoria";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-pills flex-column flex-md-row mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="@Url.Action("Index", "Categoria")"><i class="bx bx-arrow-back me-1"></i> Categorias</a>
+            </li>
+        </ul>
+        <div class="card mb-4">
+            <h5 class="card-header">Agregar Categoria</h5>
+            <hr class="my-0" />
+            <div class="card-body">
+                <form id="formAccountSettings"
+                      method="POST"
+                      onsubmit="return false">
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="descripcion" class="form-label">Descripcion</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="descripcion"
+                                   name="descripcion"
+                                   value="Tecnología"
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="currency" class="form-label">Estado</label>
+                            <select id="currency" class="select2 form-select">
+                                <option value="activo">Activo</option>
+                                <option value="noActivo">No Activo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">
+                            Guardar Cambios
+                        </button>
+                        <button type="reset"
+                                class="btn btn-outline-secondary">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

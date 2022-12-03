@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewData["Title"] = "AgregarProducto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-pills flex-column flex-md-row mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="@Url.Action("Index", "Producto")"><i class="bx bx-arrow-back me-1"></i> Productos</a>
+            </li>
+        </ul>
+        <div class="card mb-4">
+            <h5 class="card-header">Agregar Producto</h5>
+            <hr class="my-0" />
+            <div class="card-body">
+                <form id="formAccountSettings"
+                      method="POST"
+                      onsubmit="return false">
+                    <div class="row">
+                        <div class="mb-3 col-md-6">
+                            <label for="codigoBarra" class="form-label">Codigo de Barra</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="codigoBarra"
+                                   name="codigoBarra"
+                                   value="453463446"
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="Marca" class="form-label">Marca</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="Marca"
+                                   name="Marca"
+                                   value="Apple"
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="descripcion" class="form-label">Descripcion</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="descripcion"
+                                   name="descripcion"
+                                   value="..."
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="currency" class="form-label">Categoria</label>
+                            <select id="currency" class="select2 form-select">
+                                <option value="">Seleccionar</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="stock" class="form-label">Stock</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="stock"
+                                   name="stock"
+                                   value="5"
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input class="form-control"
+                                   type="text"
+                                   id="precio"
+                                   name="precio"
+                                   value="500"
+                                   autofocus />
+                        </div>
+                        <div class="mb-3 col-md-6">
+                            <label for="currency" class="form-label">Estado</label>
+                            <select id="currency" class="select2 form-select">
+                                <option value="activo">Activo</option>
+                                <option value="noActivo">No Activo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 col-md-6 d-flex align-items-start align-items-sm-center gap-4">
+                            <img src="../assets/img/avatars/1.png"
+                                 alt="user-avatar"
+                                 class="d-block rounded"
+                                 height="100"
+                                 width="100"
+                                 id="uploadedAvatar" />
+                            <div class="button-wrapper">
+                                <label for="upload"
+                                       class="btn btn-primary me-2 mb-4"
+                                       tabindex="0">
+                                    <span class="d-none d-sm-block">Cargar Foto</span>
+                                    <i class="bx bx-upload d-block d-sm-none"></i>
+                                    <input type="file"
+                                           id="upload"
+                                           class="account-file-input"
+                                           hidden
+                                           accept="image/png, image/jpeg" />
+                                </label>
+                                <button type="button"
+                                        class="btn btn-outline-secondary account-image-reset mb-4">
+                                    <i class="bx bx-reset d-block d-sm-none"></i>
+                                    <span class="d-none d-sm-block">Reset</span>
+                                </button>
+
+                                <p class="text-muted mb-0">
+                                    Allowed JPG, GIF or PNG. Max size of 800K
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-primary me-2">
+                            Guardar Cambios
+                        </button>
+                        <button type="reset"
+                                class="btn btn-outline-secondary">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>

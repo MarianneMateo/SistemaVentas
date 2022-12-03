@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Reportes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row py-3 mb-4 justify-content-center">
+    <div class="col-md-3">
+        <div class="input-group input-group-merge">
+            <span class="input-group-text" id="basic-addon-search31">
+                <i class="bx bx-calendar"></i>
+            </span>
+            <input type="text"
+                   class="form-control"
+                   placeholder="Fecha Inicio..."
+                   aria-label="Search..."
+                   aria-describedby="basic-addon-search31" />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group input-group-merge">
+            <span class="input-group-text" id="basic-addon-search31">
+                <i class="bx bx-calendar"></i>
+            </span>
+            <input type="text"
+                   class="form-control"
+                   placeholder="Fecha Fin..."
+                   aria-label="Search..."
+                   aria-describedby="basic-addon-search31" />
+        </div>
+    </div>
+    <div class="col-md-3">
+        <button type="button" class="btn btn-primary">
+            <span class="tf-icons bx bx-search"></span>&nbsp; Buscar
+        </button>
+    </div>
+</div>
+<!-- Basic Bootstrap Table -->
+<div class="card">
+    <h5 class="card-header">Reporte</h5>
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Fecha Registro</th>
+                    <th># Venta</th>
+                    <th>Documento</th>
+                    <th>Nombre Cliente</th>
+                    <th>Sub Total Venta</th>
+                    <th>Impuesto Total Venta</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                <tr>
+                    <td>
+                        <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                        <strong>01/12/2022</strong>
+                    </td>
+                    <td>145464</td>
+                    <td>Factura</td>
+                    <td>Pedro</td>
+                    <td>1563</td>
+                    <td>64846</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

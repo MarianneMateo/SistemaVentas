@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewData["Title"] = "NuevaVenta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <!-- COLUMNA -->
+    <div class="col-sm-8">
+        <!-- Cliente (fila) -->
+        <div class="row me-5 mb-5">
+            <div class="card pb-5">
+                <h5 class="card-header">Cliente</h5>
+                <div class="card-body">
+                    <form id="formAccountSettings"
+                          method="POST"
+                          onsubmit="return false">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input class="form-control"
+                                       type="text"
+                                       id="numeroDocumento"
+                                       name="numeroDocumento"
+                                       value="numero documento"
+                                       autofocus />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control"
+                                       type="text"
+                                       id="nombreCompleto"
+                                       name="nombreCompleto"
+                                       value="nombre completo"
+                                       autofocus />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla Productos (fila) -->
+        <div class="row me-5 mt-5">
+            <div class="card pb-3">
+                <h5 class="card-header">Lista de Productos</h5>
+                <div class="card-body">
+                    <select id="currency" class="select2 form-select">
+                        <option value="activo"></option>
+                        <option value="noActivo"></option>
+                    </select>
+                    <div class="table-responsive text-nowrap">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                                <tr>
+                                    <td>
+                                        <i class="fab fa-angular fa-lg text-danger me-3"></i>
+                                        <strong>Angular Project</strong>
+                                    </td>
+                                    <td>5</td>
+                                    <td>20$</td>
+                                    <td><span class="me-1">100$</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COLUMNA -->
+
+    <div class="col-sm-4">
+        <!-- Detalle (fila) -->
+        <div class="row">
+            <div class="card">
+                <h5 class="card-header">Detalle</h5>
+                <div class="card-body">
+                    <form id="formAccountSettings"
+                          method="POST"
+                          onsubmit="return false">
+                        <label for="tipo" class="form-label">Tipo</label>
+                        <select id="tipo" class="select2 form-select">
+                            <option value="factura">Factura</option>
+                            <option value="boleta">Boleta</option>
+                        </select>
+                        <label for="exampleFormControlReadOnlyInput1"
+                               class="form-label">Sub Total</label>
+                        <input class="form-control"
+                               type="text"
+                               id="exampleFormControlReadOnlyInput1"
+                               placeholder="Sub total here..."
+                               readonly />
+                        <label for="exampleFormControlReadOnlyInput2"
+                               class="form-label">IGV (18%)</label>
+                        <input class="form-control"
+                               type="text"
+                               id="exampleFormControlReadOnlyInput2"
+                               placeholder="IGV here..."
+                               readonly />
+                        <label for="exampleFormControlReadOnlyInput3"
+                               class="form-label">Total</label>
+                        <input class="form-control"
+                               type="text"
+                               id="exampleFormControlReadOnlyInput3"
+                               placeholder="Total here..."
+                               readonly />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boton terminar venta (fila)-->
+
+        <div class="row py-3 mb-4">
+            <div class="card py-3 mb-4">
+                <a href="agregarProducto.html"
+                   class="btn btn-primary"
+                   type="button">
+                    <span class="tf-icons bx bx-shopping-bag"></span>&nbsp;
+                    Terminar Venta
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

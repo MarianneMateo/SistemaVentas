@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewData["Title"] = "Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="bx bx-user"></i> Mis Datos</h5>
+                <small class="text-muted float-end">Perfil</small>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlReadOnlyInput1"
+                               class="form-label">Nombre</label>
+                        <input class="form-control"
+                               type="text"
+                               id="exampleFormControlReadOnlyInput1"
+                               placeholder="John Doe"
+                               readonly />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlReadOnlyInput2"
+                               class="form-label">Email</label>
+                        <input class="form-control"
+                               type="text"
+                               id="exampleFormControlReadOnlyInput2"
+                               placeholder="johndoe@example.com" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="basic-default-phone">Phone No</label>
+                        <input type="text"
+                               id="basic-default-phone"
+                               class="form-control phone-mask"
+                               placeholder="658 799 8941" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="rol">Rol</label>
+                        <input type="text"
+                               id="rol"
+                               class="form-control"
+                               placeholder="Admin"
+                               readonly />
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Guardan Cambios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="bx bxs-key"></i> Cambiar Contrasena
+                </h5>
+                <small class="text-muted float-end">New</small>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-4 p-2">
+                        <label for="exampleFormControlReadOnlyInput1"
+                               class="form-label">Contrasena Actual</label>
+                        <input class="form-control"
+                               type="password"
+                               id="exampleFormControlReadOnlyInput1" />
+                    </div>
+                    <div class="mb-4 p-2">
+                        <label for="exampleFormControlReadOnlyInput2"
+                               class="form-label">Nueva Contrasena</label>
+                        <input class="form-control"
+                               type="password"
+                               id="exampleFormControlReadOnlyInput2" />
+                    </div>
+                    <div class="mb-4 p-2">
+                        <label class="form-label" for="rol">Confirmar Contrasena</label>
+                        <input type="password"
+                               id="rol"
+                               class="form-control"
+                               placeholder="Admin" />
+                    </div>
+                    <button type="submit" class="btn btn-primary ms-2 mt-2">
+                        Guardan Cambios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
